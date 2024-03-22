@@ -9,6 +9,9 @@ export function compare(userNumber, randNumber){
         return 'A te számod nagyobb!'
     }
     else{
+        console.log("valami");
+        document.querySelector('.probalkozasok').innerHTML = ""
+        document.querySelector('.checkBtn').disabled = true
         return 'Kitaláltad!'
     }
 }
