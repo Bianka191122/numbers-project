@@ -1,10 +1,11 @@
 export function showLives(nr){
-    nr--
-    document.querySelector('.probalkozasok').innerHTML += nr
-
+    //nr--
     if(nr==0){
-        document.querySelector('.checkBtn').disabled=true;
-        let uzenet = document.querySelector('.megoldas');
-        megoldas.innerText = "Nincs több életed...";
+        document.querySelector('.checkBtn').disabled = true;
+        let uzenet = document.querySelector('.probalkozasok');
+        uzenet.innerText = "Nincs több életed...";
+    }
+    else{
+       document.querySelector('.probalkozasok').innerHTML = nr 
     }
 }
