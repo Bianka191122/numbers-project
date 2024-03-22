@@ -1,7 +1,10 @@
-export function showLives(){
-    let Tries = 0;
-    let maxTries = 5;
-    let userGuess = document.querySelector('.userSzam').value
+export function showLives(nr){
+    nr--
+    document.querySelector('.probalkozasok').innerHTML += nr
 
-    if()
+    if(nr==0){
+        document.querySelector('.checkBtn').disabled=true;
+        let uzenet = document.querySelector('.megoldas');
+        megoldas.innerText = "Nincs több életed...";
+    }
 }
