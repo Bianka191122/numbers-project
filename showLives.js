@@ -5,7 +5,5 @@ export function showLives(nr){
         let uzenet = document.querySelector('.probalkozasok');
         uzenet.innerText = "Nincs több életed...";
     }
-    else{
-       document.querySelector('.probalkozasok').innerHTML = nr 
-    }
+    return
 }

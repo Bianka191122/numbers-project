@@ -18,6 +18,7 @@ document.querySelector('.checkBtn').addEventListener('click', check)
 function check(){
     let userNumber = document.querySelector('.userSzam').value
     console.log(userNumber);
+    document.querySelector('.probalkozasok').innerHTML = nr 
     let result = compare(userNumber, randNr)
     document.querySelector('.megoldas').innerHTML = result
     nr--
