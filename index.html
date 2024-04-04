@@ -5,19 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Numbers</title>
+
+    <style>
+        .box{
+            box-shadow: -1px 1px 10px 1px white;
+        }
+
+        h3{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: rgb(143, 59, 59);
+        }
+
+        .userSzam{
+            color: rgb(163, 162, 162);
+        }
+
+        .megoldas{
+            color: #a3a2a2;
+            font-weight: bold;
+        }
+
+        .probalkozasok{
+            color: #a3a2a2;
+            font-weight: bold;
+        }
+
+        .checkBtn:hover{
+            color: white;
+        }
+    </style>
 </head>
-<body>
-    <div class="bg-emerald-900 h-screen grid place-content-center">
-        <div class="w-[450px] h-[350px] bg-emerald-600 rounded-md p-3 flex flex-col items-center justify-center">
-            <h3 class="text-4xl text-center p-5">Találd ki a számot!</h3>
-            <div class="megoldas text-xl"></div>
+<body class="bg-[#632323] w-screen h-screen flex justify-center">
+    <div class="container  bg-[#632323] h-screen flex justify-center items-center">
+        <div class="box  w-[550px] h-[450px] bg-[#431515] rounded-md p-3 flex flex-col items-center justify-center">
+            <h3 class="text-5xl text-center p-5 mb-8">Találd ki a számot!</h3>
+            <div class="megoldas text-2xl"></div>
             <div>
-                <input class="userSzam  p-3 mb-3 mt-3 text-center" type="text" placeholder="Írd ide a számod">
+                <input class="userSzam  p-3 mb-3 mt-3 text-center rounded bg-[#632323] font-bold" type="text" placeholder="Írd ide a számod">
             </div>
             <div>
-                <button class="checkBtn  bg-emerald-900 flex items-center justify-center p-3 w-[100px] h-[40px] hover:bg-emerald-800">Ellenőrzés</button>
+                <button class="checkBtn  bg-[#632323] flex items-center justify-center p-3 w-[100px] h-[40px] hover:bg-[#8c4444] rounded font-bold text-[#8f3b3b]  shadow-lg transform active:scale-x-75 transition-transform mx-5">Ellenőrzés</button>
             </div>
-            <div class="probalkozasok">Ennyi életed maradt: </div>
+            <div class="probalkozasok text-xl mt-10">Életek száma: 5</div>
         </div>
     </div>
     <script type="module" src="main.js"></script>
